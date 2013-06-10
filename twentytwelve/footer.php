@@ -20,8 +20,28 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <script type="text/javascript">
+    function enableFollowNav(navElement) {
+        var $sidebar = navElement,
+            $window = $(window),
+            offset = $sidebar.offset(),
+            topPadding = 50,
+	    sidePadding = 500;
+	    winPadding = 2000;
+
+        $window.scroll(function() {
+            if ($window.scrollTop() > offset.top + winPadding) {
+		navElement.css("position","fixed");
+		navElement.css("top",topPadding+"px");
+		navElement.css("right",sidePadding+"px");
+		navElement.fadeIn();
+            } else {
+		navElement.fadeOut();
+            }
+        });
+    }
 $(function() {
 $("#site-navigation").sticky({topSpacing:20});
+   enableFollowNav($("#back-to-top"));
 }
 );
 </script>

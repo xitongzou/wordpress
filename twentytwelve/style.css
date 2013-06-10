@@ -1727,4 +1727,23 @@ img#wpstats {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+}
+#back-to-top {
+padding-left: 13px;
+text-align: right;
+display: none;
+-webkit-transition: opacity 0.05s linear;
+-moz-transition: opacity 0.05s linear;
+-o-transition: opacity 0.05s linear;
+transition: opacity 0.05s linear;
+}
+
+#back-to-top a {
+text-decoration: none;
+display: inline-block;
+line-height: 1.5em;
+border-bottom: none;
+font-family: 'Maven Pro';
+font-weight: bold;
+cursor: pointer;
 }

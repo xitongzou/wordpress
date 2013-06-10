@@ -66,5 +66,5 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
 	</header><!-- #masthead -->
-
+<div id="back-to-top"><a id="back-top-top" href="#page" onclick="scrollup(); return false;">↑ Back to Top</a></div>
 	<div id="main" class="wrapper">
